@@ -8,77 +8,124 @@
     <title>MMS Merchants</title>
 </head>
 <body>
-    <!-- File Uploader for mms -->
+    <!-- Style.css start-->
+    <style>
+        body {
+            background: lightgray;
+            text-align: center;
+            margin: 0px;
+        }
+
+        .frame {
+            font-family: 'Poppins', sans-serif;
+            margin: 2rem;
+            margin-left: 27rem;
+            margin-right: 27rem;
+        }
+
+        .center {
+            top: 50%;
+            text-align: center;
+            border-radius: 3px;
+            background: #fff;
+        }
+
+        h1 {
+            display: inline;
+            font-size: 18px;
+            font-weight: 300;
+            color: #666;
+            margin: 0px;
+        }
+
+        .zone {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dropzone {
+            background-image: url("upload_icon.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 60px;
+            height: 50px;
+            border: 1.5px dashed darkmagenta;
+            border-radius: 3px;
+        }
+
+        .upload-input {
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        .btn {
+            display: block;
+            width: 140px;
+            height: 40px;
+            background: darkmagenta;
+            color: #fff;
+            border-radius: 3px;
+            border: 0;
+            box-shadow: 0 3px 0 0 hotpink;
+            transition: all 0.3s ease-in-out;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: rebeccapurple;
+            box-shadow: 0 3px 0 0 deeppink;
+        }
+    </style>
+    <!-- Style.css end -->
+    <!-- MMS Uploader -->
     <section>
         <div class="frame">
             <div class="center">
                 <!-- Merchants Data -->
-                <div class="title">
-                    <h1>Import Merchants Data</h1>
-                </div>
                 <div class="zone">
+                    <h1>Import Merchants Data</h1>
                     <div class="dropzone">
-                        <input type="file" class="upload-input" />
+                        <input type="Now" class="upload-input" />
                     </div>
-                    <div>
-                        <button type="button" class="btn" name="uploadbutton">Upload file</button>
-                    </div>
+                    <button type="button" class="btn" name="uploadbutton">Upload Now</button>
                 </div>
-                <hr/>
                 <!-- Merchant create -->
-                <div>
-                    <div class="title">
-                        <h1>Merchant Create</h1>
-                    </div>
-                    <div class="zone">
-                        <!-- <div class="dropzone">
-                            <input type="file" class="upload-input" />
-                        </div> -->
-                        <div>
-                            <button type="button" class="btn" name="merchantcreate">Start</button>
-                        </div>
-                    </div>
-                    <hr/>
+                <div class="zone">
+                    <h1>Merchant Create</h1>
+                    <button type="button" class="btn" name="merchantcreate">Start</button>
                 </div>
                 <!-- Merchant Photo Upload -->
+                <div class="zone">
+                    <h1>Merchant Photo Upload</h1>
+                    <div class="dropzone">
+                        <input type="Now" class="upload-input" />
+                    </div>
+                    <button type="button" class="btn" name="photoupload">Upload Now</button>
+                </div>
+                <!-- Multiple Photos Upload-->
+                <div class="zone">
+                    <h1>Multiple Photo Upload</h1>
+                    <div class="dropzone">
+                        <input type="Now" class="upload-input" />
+                    </div>
+                    <button type="button" class="btn" name="photoupload">Upload Now</button>
+                </div>
+                <!-- Photo Create -->
                 <div>
-                    <div class="title">
-                        <h1>Merchant Photo Upload</h1>
-                    </div>
                     <div class="zone">
-                        <div class="dropzone">
-                            <input type="file" class="upload-input" />
-                        </div>
-                        <div>
-                            <button type="button" class="btn" name="photoupload">Upload file</button>
-                        </div>
+                        <h1>Photo Create</h1>
+                        <button type="button" class="btn" name="photoupload">Start</button>
                     </div>
-                    <!-- <hr/> -->
-                    <div class="photos-button">
-                        <div>
-                            <button type="button" class="btn multiple" name="photoupload">Multiple Photo</button>
-                        </div>
-                        <div>
-                            <button type="button" class="btn multiple" name="photoupload">Create Photo</button>
-                        </div>
-                    </div>
-                    <hr/>
                 </div>
                 <!-- QR Generate -->
-                <div>
-                    <div class="title">
-                        <h1>QR Generate</h1>
-                    </div>
-                    <div class="zone">
-                        <!-- <div class="dropzone">
-                            <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-                            <input type="file" class="upload-input" />
-                        </div> -->
-                        <div>
-                            <button type="button" class="btn" name="qrgenerate">QR Now</button>
-                        </div>
-                    </div>
-                    <hr/>
+                <div class="zone">
+                    <h1>QR Generate</h1>
+                    <button type="button" class="btn" name="qrgenerate">QR Start</button>
                 </div>
             </div>
         </div>
